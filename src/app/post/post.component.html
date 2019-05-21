@@ -1,0 +1,17 @@
+<div class="post_container">
+  <div class="post_content">
+    <h5 class="title">{{ post.title }}</h5>
+    <p class="content">{{ post.content }}</p>
+  </div>
+  <div class="votes">
+    <button (click)="upVote()"> <i class="material-icons">
+      thumb_up
+    </i></button>
+    <span>{{post.upvote}}</span>
+    <button (click)="downVote()"> <i class="material-icons">
+      thumb_down
+    </i></button>
+    <span>{{post.downvote}}</span>
+  </div>
+  <button (click)="removePost()"><i class="material-icons">close</i></button>
+</div>
